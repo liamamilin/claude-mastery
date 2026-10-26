@@ -1,16 +1,19 @@
 # 项目状态
 
-最近更新：2026-10-26（第四轮：第13–16章）
+最近更新：2026-10-26（第五轮：第17–20章）
 
 ## 已完成
 | 事项 | 状态 | 证据 |
 |---|---|---|
 | 资料包解压到项目目录 | 完成 | 原 zip 保留但已加入 `.gitignore` |
-| 导读 + 第01–16章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–16`；04–16 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
+| 导读 + 第01–20章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–20`；04–20 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
 | 第22章 | 先行示范稿，未改动 | `book/chapters/22-*.md` |
 | 新增 SVG 图解 | 完成 | `three-layers.svg`（第01章，已浏览器核对）、`three-evidence.svg`（第04章，尚未逐图目视核对） |
 | 案例 B IssueBoard | 基线通过 | `cases/lab-b-issueboard/`：`node test.mjs` PASS；Browser 经 http 显示“共 5 个任务，未完成 4 个”，三列 3/1/1。trailing-comma 场景实测：200 OK、页面“共 0 个任务”且无错误提示、JSON.parse 报 SyntaxError；发现 main.js 错误提示被 render([]) 覆盖（真实次生缺陷，未修）。file:// 行为未实测 |
 | Git 命令实测（第15、16章） | 通过 | 临时目录、macOS、Git 2.54.0：init/commit、status/diff、restore、revert、merge 冲突与 --abort、worktree add/list/remove（脏目录被拒）、merge 快进、branch -d |
+| 案例 C Web Preview Lab | 通过 | `cases/lab-c-preview/`：筛选 6/2/1/3，?empty、?error 状态正确；起始版 375px 下 scrollWidth 1016（真实溢出缺陷），`solution/` 为 375；`app.js/index.html/data.js` 与 solution 逐字节相同 |
+| 真实案例截图 | 1 张 | `book/public/screenshots/lab-c-mobile-compare.png`（无头 Chrome，375px iframe）；**不是** Claude Desktop 界面 |
+| 发布验证（第20章） | 本地通过 | `SITE_BASE` 与 `GITHUB_REPOSITORY` 两种 base；`npm ci` 全新目录通过；子路径预览 200。**未推送、未发布** |
 | SVG | 新增 `memory-layers.svg`（第11章，已目视核对） | |
 | 互动练习 Lab 2 执行方式选择器 | 完成 | `ModePicker.vue`，第08章；dev server 中 5 条分支结果逐一核对，控制台无错误 |
 | Lab A 浏览器验收 | 通过 | 见下 |
@@ -36,6 +39,6 @@
 - 未生成 PDF/EPUB。
 
 ## 下一动作
-1. 第17–20章（验证、测试金字塔、diff 审查与 PR、发布）；案例 C（Web Preview Lab）需创建并浏览器验收。
+1. 第21–24章（故障分层、第22章扩写并以 Lab D 在浏览器里真实复现、桌面环境问题、止损）；Lab D 需浏览器验收。
 2. 读者自验清单（Lab 3）。
 3. 等用户授权后推送到 https://github.com/liamamilin/claude-mastery 并核对 Actions。

@@ -38,6 +38,20 @@
         "127.0.0.1"
       ],
       "port": 48125
+    },
+    {
+      "name": "Lab C - Web Preview (static)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "48127",
+        "--directory",
+        "cases/lab-c-preview",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 48127
     }
   ]
 }

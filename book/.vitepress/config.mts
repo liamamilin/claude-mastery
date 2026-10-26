@@ -59,6 +59,12 @@ export default defineConfig({
         { text: '15 · Git、diff、commit 与恢复', link: '/chapters/15-Git-diff-commit与安全恢复' },
         { text: '16 · 并行会话与 Worktree', link: '/chapters/16-并行会话与Worktree隔离' },
       ]},
+      { text: '第五部分 · 验证、审查与交付', items: [
+        { text: '17 · 桌面浏览器预览与自动验证', link: '/chapters/17-桌面浏览器预览与自动验证' },
+        { text: '18 · 测试金字塔', link: '/chapters/18-测试金字塔启动不等于可用' },
+        { text: '19 · 可视化 diff、代码审查与 PR', link: '/chapters/19-可视化diff代码审查与PR' },
+        { text: '20 · 发布与交付', link: '/chapters/20-发布与交付别人能用才算完成' },
+      ]},
       { text: '第六部分 · 纠偏（先行示范）', items: [
         { text: '22 · 停止反复补丁', link: '/chapters/22-停止反复补丁' },
       ]},

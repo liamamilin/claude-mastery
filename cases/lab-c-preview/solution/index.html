@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>学习进度看板 · Lab C</title>
+<link rel="stylesheet" href="styles.css">
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<main class="shell">
+  <h1>学习进度看板</h1>
+  <p class="hint">示例数据，全部虚构。URL 加 <code>?empty=1</code> 看空数据，加 <code>?error=1</code> 看加载失败。</p>
+  <div class="filters" role="group" aria-label="按状态筛选">
+    <button type="button" data-filter="all" aria-pressed="true">全部</button>
+    <button type="button" data-filter="doing" aria-pressed="false">进行中</button>
+    <button type="button" data-filter="done" aria-pressed="false">已完成</button>
+    <button type="button" data-filter="todo" aria-pressed="false">未开始</button>
+  </div>
+  <p id="status" role="status"></p>
+  <div id="grid" class="grid"></div>
+</main>
+</body>
+</html>
