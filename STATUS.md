@@ -40,10 +40,11 @@
 - 未推送，GitHub Pages 未发布（需用户明确授权）。
 - 未生成 PDF/EPUB。
 
-| 案例 F 毕业题 | 脚本层通过 | `cases/lab-f-graduation/`：起始版 `test.mjs` 失败 3/4；仅修月份后 TZ=America/New_York 下月初检查仍失败（第二层时区缺陷）。页面未做浏览器验收；无 README（GOAL.md 为入口） |
+| 案例 F 毕业题 | 脚本层通过 | `cases/lab-f-graduation/`：起始版 `test.mjs` 失败 3/4；仅修月份后 TZ=America/New_York 下月初检查仍失败（第二层时区缺陷）。浏览器验收通过（2026-10-26）：添加两本本月的书后页面显示“本月已读 0 本”（缺陷复现）；`pages` 留空存为空字符串，总页数不变；无 README（GOAL.md 为入口） |
 | 第29–32章、附录A–F | 完成 | 第30、31章全部依据官方文档，作者未实测云端/SSH/Chrome/Computer use/Design（附录F明示）；构建通过 |
 
+| 读者自验清单（Lab 3） | 完成 | `ReaderChecklist.vue`，接入第03、20章；勾选刷新后保留、清空生效，标注“自报，不是自动测试”；构建通过 |
+
 ## 下一动作
-1. 读者自验清单（Lab 3）；Lab F 页面浏览器验收。
-2. 真实 Claude Desktop 截图（需用户提供）。
-3. 等用户授权后推送到 https://github.com/liamamilin/claude-mastery 并核对 Actions。
+1. 真实 Claude Desktop 截图（需用户提供）。
+2. 等用户授权后推送到 https://github.com/liamamilin/claude-mastery 并核对 Actions。
