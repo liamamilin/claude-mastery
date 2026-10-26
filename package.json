@@ -1,0 +1,18 @@
+{
+  "name": "claude-mastery-lab",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "《驾驭 Claude》Claude Code Desktop 实战学院 / VitePress learning site starter",
+  "scripts": {
+    "dev": "vitepress dev book --host 127.0.0.1",
+    "build": "vitepress build book",
+    "preview": "vitepress preview book",
+    "check:package": "python3 scripts/validate_package.py"
+  },
+  "engines": {"node": ">=22"},
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13"
+  }
+}

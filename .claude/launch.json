@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "autoVerify": true,
+  "configurations": [
+    {
+      "name": "Claude Mastery Lab - VitePress",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "Lab A - LinkShelf (static)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "48123",
+        "--directory",
+        "cases/lab-a-links",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 48123
+    }
+  ]
+}

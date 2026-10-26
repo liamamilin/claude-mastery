@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LinkShelf · Claude Code Desktop Lab A</title>
+<link rel="stylesheet" href="styles.css"/>
+<script src="app.js" defer></script>
+</head><body>
+<main class="shell">
+<header><div class="eyebrow">LAB A · CLAUDE MASTERY LAB</div><h1>LinkShelf</h1><p>一个简单但真正保存数据的链接收藏工具。</p></header>
+<form id="form" novalidate><h2>添加收藏</h2><label for="title">标题</label><input id="title" name="title" required maxlength="100" placeholder="例如：Claude Code 官方文档"/>
+<label for="url">网址（请包含 https://）</label><input id="url" name="url" type="url" required placeholder="https://code.claude.com/docs"/>
+<button type="submit">保存收藏 <span aria-hidden="true">+</span></button><p id="message" class="message" role="status" aria-live="polite"></p></form>
+<section class="listarea" aria-labelledby="list-title"><div class="listtitle"><h2 id="list-title">我的收藏</h2><span id="count" aria-live="polite">0 条</span></div><ul id="list"></ul></section>
+<footer>数据保存在当前浏览器的本地存储中，不上传服务器。请勿输入真实敏感信息。</footer>
+</main>
+</body></html>

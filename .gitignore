@@ -1,0 +1,11 @@
+node_modules/
+book/.vitepress/dist/
+book/.vitepress/cache/
+book/.vitepress/.temp/
+.DS_Store
+.env
+.env.*
+*.log
+__pycache__/
+*.pyc
+*.zip
