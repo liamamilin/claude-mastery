@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-labelledby="t d">
+<title id="t">故障分层的八层地图</title>
+<desc id="d">从上到下依次是需求、环境、权限、依赖与工具、实现、状态与数据、呈现、测试方法。一个症状可能来自其中任何一层，检查应选择能同时排除多层的一项。</desc>
+<rect width="960" height="420" rx="16" fill="#0b1220"/>
+<g font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+<text x="30" y="34" fill="#9bb0c4" font-size="15">同一个症状 ⟶ 先列出可能的层，再选一个能排除最多层的检查</text>
+<g font-size="17" fill="#f4f1e9">
+<rect x="30" y="52" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="77"><tspan fill="#e8ad66" font-family="monospace">1</tspan>  需求：目标是否说清？</text>
+<rect x="30" y="96" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="121"><tspan fill="#e8ad66" font-family="monospace">2</tspan>  环境：怎么运行？端口？目录？</text>
+<rect x="30" y="140" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="165"><tspan fill="#e8ad66" font-family="monospace">3</tspan>  权限：被拒绝？等待批准？</text>
+<rect x="30" y="184" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="209"><tspan fill="#e8ad66" font-family="monospace">4</tspan>  依赖 / 工具：版本、命令、连接</text>
+<rect x="30" y="228" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="253"><tspan fill="#e8ad66" font-family="monospace">5</tspan>  实现：逻辑本身是否有错？</text>
+<rect x="30" y="272" width="560" height="38" rx="8" fill="#1a2330" stroke="#e8ad66" stroke-width="2"/><text x="48" y="297"><tspan fill="#e8ad66" font-family="monospace">6</tspan>  状态 / 数据：内存、存储、文件是否一致？</text>
+<rect x="30" y="316" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="341"><tspan fill="#e8ad66" font-family="monospace">7</tspan>  呈现：显示与提示是否正确？</text>
+<rect x="30" y="360" width="560" height="38" rx="8" fill="#101d2b" stroke="#516c85"/><text x="48" y="385"><tspan fill="#e8ad66" font-family="monospace">8</tspan>  测试方法：检查本身有没有盲区？</text>
+</g>
+<g font-size="15" fill="#c3d0dc">
+<text x="625" y="82" fill="#e8ad66" font-weight="700">方法</text>
+<text x="625" y="112">① 只写“动作 → 结果 → 期望”</text>
+<text x="625" y="140">② 每层一条可检验假设</text>
+<text x="625" y="168">③ 选最便宜、区分力最强的检查</text>
+<text x="625" y="212" fill="#e8ad66" font-weight="700">举例（Lab D）</text>
+<text x="625" y="240">点击后列表已变 → 排除“事件没绑定”</text>
+<text x="625" y="268">点击前后看存储 → 指向第 6 层</text>
+<text x="625" y="312" fill="#9bb0c4">高亮的层是该例子的根因所在；</text>
+<text x="625" y="334" fill="#9bb0c4">框架为本书自拟，非官方分类。</text>
+</g></g></svg>

@@ -1,12 +1,12 @@
 # 项目状态
 
-最近更新：2026-10-26（第五轮：第17–20章）
+最近更新：2026-10-26（第六轮：第21–24章）
 
 ## 已完成
 | 事项 | 状态 | 证据 |
 |---|---|---|
 | 资料包解压到项目目录 | 完成 | 原 zip 保留但已加入 `.gitignore` |
-| 导读 + 第01–20章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–20`；04–20 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
+| 导读 + 第01–24章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–24`；04–24 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
 | 第22章 | 先行示范稿，未改动 | `book/chapters/22-*.md` |
 | 新增 SVG 图解 | 完成 | `three-layers.svg`（第01章，已浏览器核对）、`three-evidence.svg`（第04章，尚未逐图目视核对） |
 | 案例 B IssueBoard | 基线通过 | `cases/lab-b-issueboard/`：`node test.mjs` PASS；Browser 经 http 显示“共 5 个任务，未完成 4 个”，三列 3/1/1。trailing-comma 场景实测：200 OK、页面“共 0 个任务”且无错误提示、JSON.parse 报 SyntaxError；发现 main.js 错误提示被 render([]) 覆盖（真实次生缺陷，未修）。file:// 行为未实测 |
@@ -14,6 +14,7 @@
 | 案例 C Web Preview Lab | 通过 | `cases/lab-c-preview/`：筛选 6/2/1/3，?empty、?error 状态正确；起始版 375px 下 scrollWidth 1016（真实溢出缺陷），`solution/` 为 375；`app.js/index.html/data.js` 与 solution 逐字节相同 |
 | 真实案例截图 | 1 张 | `book/public/screenshots/lab-c-mobile-compare.png`（无头 Chrome，375px iframe）；**不是** Claude Desktop 界面 |
 | 发布验证（第20章） | 本地通过 | `SITE_BASE` 与 `GITHUB_REPOSITORY` 两种 base；`npm ci` 全新目录通过；子路径预览 200。**未推送、未发布** |
+| SVG（第21章） | `fault-layers.svg`（已用无头 Chrome 渲染目视核对；`three-evidence.svg` 同） | |
 | SVG | 新增 `memory-layers.svg`（第11章，已目视核对） | |
 | 互动练习 Lab 2 执行方式选择器 | 完成 | `ModePicker.vue`，第08章；dev server 中 5 条分支结果逐一核对，控制台无错误 |
 | Lab A 浏览器验收 | 通过 | 见下 |
@@ -28,7 +29,7 @@
 - 点击“删除” → 0 条，提示“已删除并保存。”；刷新 → 空状态文案 ✅
 - 空标题 → “请填写收藏标题。” ✅；`ftp://` 网址 → “请输入包含 http:// 或 https:// 的有效网址。” ✅（这两项通过 form.requestSubmit 触发）
 - 注：本机 8765、8791 端口已被其他项目占用，`launch.json` 改用 48123。
-- Lab D 仍只有 Node 逻辑测试，未在浏览器验收；不标为已验证。
+- **Lab D 浏览器验收通过**（2026-10-26）：起始版点击删除后页面清空、`localStorage` 值不变、刷新后任务回来；solution（配同一 index.html/styles.css）新增→存储 2 条→删除→存储 1 条→刷新仍 1 条。起始版未被修改。
 
 ## 缺口 / 限制
 - **没有真实 Claude Desktop Code 界面截图**：浏览器工具无法保存图像文件，也不应伪造界面；需要在 Desktop 里手动截图或获得截屏授权。第02、03章已如实声明未附截图。
@@ -39,6 +40,6 @@
 - 未生成 PDF/EPUB。
 
 ## 下一动作
-1. 第21–24章（故障分层、第22章扩写并以 Lab D 在浏览器里真实复现、桌面环境问题、止损）；Lab D 需浏览器验收。
+1. 第25–28章（Skills、Connectors/MCP/Plugins、Hooks、Subagents）：需创建案例 E，并核对官方 skills/hooks/mcp/sub-agents 页面；Hook 与 Skill 要真实运行验证。
 2. 读者自验清单（Lab 3）。
 3. 等用户授权后推送到 https://github.com/liamamilin/claude-mastery 并核对 Actions。

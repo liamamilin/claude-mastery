@@ -52,6 +52,34 @@
         "127.0.0.1"
       ],
       "port": 48127
+    },
+    {
+      "name": "Lab D - Persistence (static)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "48128",
+        "--directory",
+        "cases/lab-d-persistence",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 48128
+    },
+    {
+      "name": "Lab D - Solution (static)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "48129",
+        "--directory",
+        "cases/lab-d-persistence/solution",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 48129
     }
   ]
 }

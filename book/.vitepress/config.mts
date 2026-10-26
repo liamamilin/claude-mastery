@@ -65,8 +65,11 @@ export default defineConfig({
         { text: '19 · 可视化 diff、代码审查与 PR', link: '/chapters/19-可视化diff代码审查与PR' },
         { text: '20 · 发布与交付', link: '/chapters/20-发布与交付别人能用才算完成' },
       ]},
-      { text: '第六部分 · 纠偏（先行示范）', items: [
+      { text: '第六部分 · 错误、补丁与纠偏', items: [
+        { text: '21 · 先判断问题发生在哪一层', link: '/chapters/21-先判断问题发生在哪一层' },
         { text: '22 · 停止反复补丁', link: '/chapters/22-停止反复补丁' },
+        { text: '23 · 桌面环境与工具连接故障', link: '/chapters/23-桌面环境问题与工具连接故障' },
+        { text: '24 · 回退、换方案与止损', link: '/chapters/24-回退换方案降范围与止损' },
       ]},
     ],
     outline: { level: [2, 3], label: '本页目录' },
