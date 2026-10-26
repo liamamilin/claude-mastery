@@ -24,6 +24,20 @@
         "127.0.0.1"
       ],
       "port": 48123
+    },
+    {
+      "name": "Lab B - IssueBoard (static)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "48125",
+        "--directory",
+        "cases/lab-b-issueboard",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 48125
     }
   ]
 }

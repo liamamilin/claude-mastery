@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { groupByStatus, countOpen } from './src/board.js';
+const issues = JSON.parse(readFileSync(new URL('./data/issues.json', import.meta.url)));
+const g = groupByStatus(issues);
+assert.equal(issues.length, 5);
+assert.deepEqual([g.open.length, g['in-progress'].length, g.done.length], [3, 1, 1]);
+assert.equal(countOpen(issues), 4);
+assert.equal(issues.filter(i => !('priority' in i)).length, 1);
+console.log('PASS Lab B baseline: grouping, open count, one legacy issue without priority');

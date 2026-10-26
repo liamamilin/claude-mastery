@@ -47,6 +47,12 @@ export default defineConfig({
         { text: '07 · 写好任务说明', link: '/chapters/07-写好任务说明但不替Claude预设所有步骤' },
         { text: '08 · 探索、计划、小样、执行', link: '/chapters/08-探索计划小实验执行之间怎样切换' },
       ]},
+      { text: '第三部分 · 理解项目与上下文', items: [
+        { text: '09 · 接手不知道怎么运行的项目', link: '/chapters/09-接手不知道怎么运行的项目' },
+        { text: '10 · 用附件、@文件、截图和日志给足证据', link: '/chapters/10-用附件文件截图和日志给足证据' },
+        { text: '11 · CLAUDE.md、规则与记忆', link: '/chapters/11-CLAUDE-md规则与记忆怎样分工' },
+        { text: '12 · 跨会话续写', link: '/chapters/12-跨会话续写让下一次会话接得上' },
+      ]},
       { text: '第六部分 · 纠偏（先行示范）', items: [
         { text: '22 · 停止反复补丁', link: '/chapters/22-停止反复补丁' },
       ]},

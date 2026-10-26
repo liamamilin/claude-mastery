@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-labelledby="t d">
+<title id="t">四种“记住”的机制</title>
+<desc id="d">会话上下文随会话结束消失；HANDOFF.md 是当前任务的进度记录；CLAUDE.md 由你维护、可随项目共享；自动记忆由 Claude 书写、只在本机。</desc>
+<rect width="960" height="330" rx="16" fill="#0b1220"/>
+<g font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+<text x="480" y="34" fill="#9bb0c4" font-size="15">谁来写？能活多久？</text>
+<g fill="#101d2b" stroke="#516c85"><rect x="24" y="56" width="210" height="190" rx="12"/><rect x="258" y="56" width="210" height="190" rx="12"/><rect x="492" y="56" width="210" height="190" rx="12" stroke="#e8ad66" stroke-width="2"/><rect x="726" y="56" width="210" height="190" rx="12"/></g>
+<g fill="#f4f1e9" font-size="20" font-weight="700"><text x="129" y="94">会话上下文</text><text x="363" y="94">HANDOFF.md</text><text x="597" y="94">CLAUDE.md</text><text x="831" y="94">自动记忆</text></g>
+<g fill="#e8ad66" font-size="13"><text x="129" y="122">写：对话本身</text><text x="363" y="122">写：你与 Claude</text><text x="597" y="122">写：你</text><text x="831" y="122">写：Claude</text></g>
+<g fill="#c3d0dc" font-size="14"><text x="129" y="158">寿命：这个会话</text><text x="363" y="158">寿命：这项任务</text><text x="597" y="158">寿命：长期</text><text x="831" y="158">寿命：长期，仅本机</text>
+<text x="129" y="188">放：本次任务细节</text><text x="363" y="188">放：进度、未验证项</text><text x="597" y="188">放：命令、约定、坑</text><text x="831" y="188">放：你的纠正与偏好</text></g>
+<g fill="#9bb0c4" font-size="13"><text x="129" y="226">会被填满或清空</text><text x="363" y="226">任务结束可归档</text><text x="597" y="226">可随项目共享</text><text x="831" y="226">应偶尔审阅</text></g>
+<text x="480" y="290" fill="#9bb0c4" font-size="14">需要“强制执行”的规则：不要放在这里，交给权限规则或 Hook</text>
+</g></svg>

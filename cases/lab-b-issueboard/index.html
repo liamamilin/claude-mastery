@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IssueBoard · Lab B</title>
+<style>
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;margin:0;padding:24px;background:#f5f3ee;color:#1d2733}
+h1{margin:0 0 4px}#summary{color:#55616f;margin-bottom:20px}
+#board{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.column{background:#fff;border-radius:10px;padding:12px 14px;box-shadow:0 1px 3px #0002}
+.column h2{font-size:16px;margin:0 0 10px}
+.card{border:1px solid #e1ddd3;border-radius:8px;padding:10px;margin-bottom:8px;display:grid;gap:4px}
+small{color:#6b7683}
+</style>
+</head>
+<body>
+<h1>IssueBoard</h1>
+<div id="summary">加载中…</div>
+<div id="board"></div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
