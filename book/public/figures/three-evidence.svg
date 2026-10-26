@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="t d">
+<title id="t">三种证据互相补位</title>
+<desc id="d">Changes 面板证明改了什么，Terminal 证明命令输出是什么，Browser 证明用户看到什么。只有三者一致才可信，缺任何一种都留下一类风险。</desc>
+<rect width="960" height="360" rx="16" fill="#0b1220"/>
+<g font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+<text x="480" y="36" fill="#9bb0c4" font-size="15">一次修改，三种相互独立的证据</text>
+<g fill="#101d2b" stroke="#516c85">
+<rect x="30" y="60" width="270" height="170" rx="12"/><rect x="345" y="60" width="270" height="170" rx="12"/><rect x="660" y="60" width="270" height="170" rx="12"/></g>
+<g fill="#e8ad66" font-size="13" font-family="monospace"><text x="165" y="88">CHANGES</text><text x="480" y="88">TERMINAL</text><text x="795" y="88">BROWSER</text></g>
+<g fill="#f4f1e9" font-size="24" font-weight="700"><text x="165" y="124">改了什么</text><text x="480" y="124">命令输出什么</text><text x="795" y="124">用户看到什么</text></g>
+<g fill="#c3d0dc" font-size="14"><text x="165" y="160">逐行 diff · +N -M</text><text x="165" y="182">能发现越界改动</text>
+<text x="480" y="160">grep、测试、构建</text><text x="480" y="182">能发现文件与说法不符</text>
+<text x="795" y="160">页面 · 点击 · 刷新</text><text x="795" y="182">能发现“改了但不好用”</text></g>
+<g fill="#9bb0c4" font-size="13"><text x="165" y="214">只有它：不知道能否运行</text><text x="480" y="214">只有它：不知道显示如何</text><text x="795" y="214">只有它：不知道是否改多</text></g>
+<g stroke="#e8ad66" stroke-width="1.5" fill="none"><path d="M165 232V270H795V232"/><path d="M480 232V270"/></g>
+<rect x="300" y="282" width="360" height="48" rx="10" fill="#1a2330" stroke="#e8ad66" stroke-width="2"/>
+<text x="480" y="312" fill="#f4f1e9" font-size="17" font-weight="700">三者一致 → 可信的“完成”</text>
+</g></svg>

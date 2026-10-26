@@ -39,6 +39,13 @@ export default defineConfig({
         { text: '01 · 认识 Claude Desktop Code', link: '/chapters/01-理解ClaudeDesktop的Code' },
         { text: '02 · 安装、登录与第一个本地会话', link: '/chapters/02-安装登录与第一个本地会话' },
         { text: '03 · 发出第一个任务，看见文件变化', link: '/chapters/03-发出第一个任务看见文件变化' },
+        { text: '04 · 桌面预览、终端与变更面板', link: '/chapters/04-桌面预览终端与变更面板' },
+      ]},
+      { text: '第二部分 · 从想法到可执行任务', items: [
+        { text: '05 · 需求不清楚，如何探索', link: '/chapters/05-需求不清楚如何带Claude探索' },
+        { text: '06 · 把成功定义为可观察的行为', link: '/chapters/06-把成功定义为可观察的行为' },
+        { text: '07 · 写好任务说明', link: '/chapters/07-写好任务说明但不替Claude预设所有步骤' },
+        { text: '08 · 探索、计划、小样、执行', link: '/chapters/08-探索计划小实验执行之间怎样切换' },
       ]},
       { text: '第六部分 · 纠偏（先行示范）', items: [
         { text: '22 · 停止反复补丁', link: '/chapters/22-停止反复补丁' },

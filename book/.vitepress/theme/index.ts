@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import LandingHero from './components/LandingHero.vue'
 import DecisionLab from './components/DecisionLab.vue'
+import ModePicker from './components/ModePicker.vue'
 import MasteryLoop from './components/MasteryLoop.vue'
 import './styles.css'
 
@@ -11,5 +12,6 @@ export default {
     app.component('LandingHero', LandingHero)
     app.component('DecisionLab', DecisionLab)
     app.component('MasteryLoop', MasteryLoop)
+    app.component('ModePicker', ModePicker)
   },
 } satisfies Theme
