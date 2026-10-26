@@ -53,6 +53,12 @@ export default defineConfig({
         { text: '11 · CLAUDE.md、规则与记忆', link: '/chapters/11-CLAUDE-md规则与记忆怎样分工' },
         { text: '12 · 跨会话续写', link: '/chapters/12-跨会话续写让下一次会话接得上' },
       ]},
+      { text: '第四部分 · 控制执行与版本', items: [
+        { text: '13 · 权限模式与自主性', link: '/chapters/13-权限模式怎样设置合适的自主性' },
+        { text: '14 · 看进度、打断与纠偏', link: '/chapters/14-看进度打断与纠偏' },
+        { text: '15 · Git、diff、commit 与恢复', link: '/chapters/15-Git-diff-commit与安全恢复' },
+        { text: '16 · 并行会话与 Worktree', link: '/chapters/16-并行会话与Worktree隔离' },
+      ]},
       { text: '第六部分 · 纠偏（先行示范）', items: [
         { text: '22 · 停止反复补丁', link: '/chapters/22-停止反复补丁' },
       ]},

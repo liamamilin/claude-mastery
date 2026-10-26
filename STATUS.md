@@ -1,15 +1,16 @@
 # 项目状态
 
-最近更新：2026-10-26（第三轮：第09–12章）
+最近更新：2026-10-26（第四轮：第13–16章）
 
 ## 已完成
 | 事项 | 状态 | 证据 |
 |---|---|---|
 | 资料包解压到项目目录 | 完成 | 原 zip 保留但已加入 `.gitignore` |
-| 导读 + 第01–12章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–12`；04–12 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
+| 导读 + 第01–16章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–16`；04–16 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
 | 第22章 | 先行示范稿，未改动 | `book/chapters/22-*.md` |
 | 新增 SVG 图解 | 完成 | `three-layers.svg`（第01章，已浏览器核对）、`three-evidence.svg`（第04章，尚未逐图目视核对） |
 | 案例 B IssueBoard | 基线通过 | `cases/lab-b-issueboard/`：`node test.mjs` PASS；Browser 经 http 显示“共 5 个任务，未完成 4 个”，三列 3/1/1。trailing-comma 场景实测：200 OK、页面“共 0 个任务”且无错误提示、JSON.parse 报 SyntaxError；发现 main.js 错误提示被 render([]) 覆盖（真实次生缺陷，未修）。file:// 行为未实测 |
+| Git 命令实测（第15、16章） | 通过 | 临时目录、macOS、Git 2.54.0：init/commit、status/diff、restore、revert、merge 冲突与 --abort、worktree add/list/remove（脏目录被拒）、merge 快进、branch -d |
 | SVG | 新增 `memory-layers.svg`（第11章，已目视核对） | |
 | 互动练习 Lab 2 执行方式选择器 | 完成 | `ModePicker.vue`，第08章；dev server 中 5 条分支结果逐一核对，控制台无错误 |
 | Lab A 浏览器验收 | 通过 | 见下 |
@@ -35,6 +36,6 @@
 - 未生成 PDF/EPUB。
 
 ## 下一动作
-1. 第13–16章（权限、进度与纠偏、Git/diff/恢复、Worktree），案例 B 继续使用；Git 章节需真实运行 git 命令验证。
+1. 第17–20章（验证、测试金字塔、diff 审查与 PR、发布）；案例 C（Web Preview Lab）需创建并浏览器验收。
 2. 读者自验清单（Lab 3）。
 3. 等用户授权后推送到 https://github.com/liamamilin/claude-mastery 并核对 Actions。
