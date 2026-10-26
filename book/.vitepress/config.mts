@@ -65,6 +65,12 @@ export default defineConfig({
         { text: '19 · 可视化 diff、代码审查与 PR', link: '/chapters/19-可视化diff代码审查与PR' },
         { text: '20 · 发布与交付', link: '/chapters/20-发布与交付别人能用才算完成' },
       ]},
+      { text: '第七部分 · 扩展 Claude 的能力', items: [
+        { text: '25 · Skills', link: '/chapters/25-Skills把有效方法变成可复用能力' },
+        { text: '26 · Connectors、MCP 与 Plugins', link: '/chapters/26-Connectors-MCP与Plugins' },
+        { text: '27 · Hooks', link: '/chapters/27-Hooks哪些步骤值得确定性自动执行' },
+        { text: '28 · Subagents', link: '/chapters/28-Subagents分工与消耗' },
+      ]},
       { text: '第六部分 · 错误、补丁与纠偏', items: [
         { text: '21 · 先判断问题发生在哪一层', link: '/chapters/21-先判断问题发生在哪一层' },
         { text: '22 · 停止反复补丁', link: '/chapters/22-停止反复补丁' },
