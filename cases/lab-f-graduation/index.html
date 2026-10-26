@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>阅读记录 · Lab F</title>
+<style>
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:560px;margin:24px auto;padding:0 16px;color:#1d2733}
+form{display:grid;gap:8px;margin:16px 0}input,button{font:inherit;padding:8px}
+#summary{color:#55616f}
+</style>
+</head>
+<body>
+<h1>阅读记录</h1>
+<form id="form">
+  <input name="title" placeholder="书名" required>
+  <input name="pages" type="number" placeholder="页数">
+  <input name="finished" type="date">
+  <button type="submit">添加</button>
+</form>
+<p id="summary"></p>
+<ul id="list"></ul>
+<script type="module" src="app.js"></script>
+</body>
+</html>

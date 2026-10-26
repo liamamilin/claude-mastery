@@ -6,7 +6,7 @@
 | 事项 | 状态 | 证据 |
 |---|---|---|
 | 资料包解压到项目目录 | 完成 | 原 zip 保留但已加入 `.gitignore` |
-| 导读 + 第01–28章正文 | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–28`；04–28 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
+| 导读 + 第01–32章正文 + 附录A–F | 完成（无真实 Desktop 截图） | `book/00-导读.md`、`book/chapters/01–32`、`book/appendix/`；04–32 依据官方 desktop 与 best-practices 页（2026-10-26 读取） |
 | 第22章 | 先行示范稿，未改动 | `book/chapters/22-*.md` |
 | 新增 SVG 图解 | 完成 | `three-layers.svg`（第01章，已浏览器核对）、`three-evidence.svg`（第04章，尚未逐图目视核对） |
 | 案例 B IssueBoard | 基线通过 | `cases/lab-b-issueboard/`：`node test.mjs` PASS；Browser 经 http 显示“共 5 个任务，未完成 4 个”，三列 3/1/1。trailing-comma 场景实测：200 OK、页面“共 0 个任务”且无错误提示、JSON.parse 报 SyntaxError；发现 main.js 错误提示被 render([]) 覆盖（真实次生缺陷，未修）。file:// 行为未实测 |
@@ -40,7 +40,10 @@
 - 未推送，GitHub Pages 未发布（需用户明确授权）。
 - 未生成 PDF/EPUB。
 
+| 案例 F 毕业题 | 脚本层通过 | `cases/lab-f-graduation/`：起始版 `test.mjs` 失败 3/4；仅修月份后 TZ=America/New_York 下月初检查仍失败（第二层时区缺陷）。页面未做浏览器验收；无 README（GOAL.md 为入口） |
+| 第29–32章、附录A–F | 完成 | 第30、31章全部依据官方文档，作者未实测云端/SSH/Chrome/Computer use/Design（附录F明示）；构建通过 |
+
 ## 下一动作
-1. 第29–32章（复杂项目拆解、本地/云端/SSH、浏览器工具/Computer use/Design、毕业任务）与案例 F；然后附录。
-2. 读者自验清单（Lab 3）。
+1. 读者自验清单（Lab 3）；Lab F 页面浏览器验收。
+2. 真实 Claude Desktop 截图（需用户提供）。
 3. 等用户授权后推送到 https://github.com/liamamilin/claude-mastery 并核对 Actions。

@@ -48,7 +48,7 @@ const active = ref(0)
       <div class="mastery-insight" aria-live="polite"><span class="mastery-insight-tag">CURRENT FOCUS / {{ stages[active].k }}</span><div><h3>{{ stages[active].subtitle }}</h3><p>{{ stages[active].desc }}</p></div></div>
     </section>
     <section class="mastery-course" aria-labelledby="course-heading">
-      <div class="mastery-section-head"><span>02 / THE CURRICULUM</span><h2 id="course-heading">从使用工具，到驾驭任务</h2><p>以下为完整课程规划。当前已开放第 01–28 章，其余章节会在真实撰写与验证后逐步上线。</p></div>
+      <div class="mastery-section-head"><span>02 / THE CURRICULUM</span><h2 id="course-heading">从使用工具，到驾驭任务</h2><p>以下为完整课程规划。当前已开放第 01–32 章，另有附录 A–F，各章对“已实测 / 未实测”的标注见附录 F。</p></div>
       <div class="mastery-grid">
         <article class="mastery-course-card"><span>PART 01 · 已开放 4 章</span><h3>认识桌面工作台</h3><p>从 Code 标签页开始，看见文件、预览、终端与改动。</p><a :href="withBase('/chapters/01-理解ClaudeDesktop的Code')">阅读第 01–04 章 →</a></article>
         <article class="mastery-course-card"><span>PART 02 · 已开放 4 章</span><h3>从想法到可执行任务</h3><p>模糊目标、完成标准、指令与执行策略。</p><a :href="withBase('/chapters/05-需求不清楚如何带Claude探索')">阅读第 05–08 章 →</a></article>
@@ -57,7 +57,7 @@ const active = ref(0)
         <article class="mastery-course-card"><span>PART 05 · 已开放 4 章</span><h3>验证、审查与交付</h3><p>Browser 预览、测试、diff、PR 和发布。</p><a :href="withBase('/chapters/17-桌面浏览器预览与自动验证')">阅读第 17–20 章 →</a></article>
         <article class="mastery-course-card mastery-card-feature"><span>PART 06 · 已开放 4 章</span><h3>停止无效补丁</h3><p>学会找证据、查假设、最小修复和回归验证。</p><a :href="withBase('/chapters/22-停止反复补丁')">阅读第 21–24 章 →</a></article>
         <article class="mastery-course-card"><span>PART 07 · 已开放 4 章</span><h3>扩展 Claude 能力</h3><p>Skills、Connectors / MCP、Hooks、Subagents。</p><a :href="withBase('/chapters/25-Skills把有效方法变成可复用能力')">阅读第 25–28 章 →</a></article>
-        <article class="mastery-course-card"><span>PART 08 · 课程规划</span><h3>复杂项目与毕业挑战</h3><p>多环境长期协作，从未知项目走向交付。</p><small>章节 29–32 · 正在编写</small></article>
+        <article class="mastery-course-card"><span>PART 08 · 已开放 4 章</span><h3>复杂项目与毕业挑战</h3><p>多环境长期协作，从未知项目走向交付。</p><a :href="withBase('/chapters/29-复杂目标拆解成连续的可用交付')">阅读第 29–32 章 →</a></article>
       </div>
     </section>
   </div>

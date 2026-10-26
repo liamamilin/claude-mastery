@@ -80,6 +80,18 @@
         "127.0.0.1"
       ],
       "port": 48129
+    },
+    {
+      "name": "Lab F graduation",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "48130",
+        "--directory",
+        "cases/lab-f-graduation"
+      ],
+      "port": 48130
     }
   ]
 }
